@@ -1,0 +1,26 @@
+ta_ema
+end balance: [33m473.62643636[39m (-5.28%)
+trendline
+end balance: [33m482.02886821[39m (-3.60%)
+trust_distrust
+end balance: [33m470.01750808[39m (-6.00%)
+macd
+end balance: [33m448.98322526[39m (-10.21%)
+ta_macd
+cci_srsi
+end balance: [33m475.86329482[39m (-4.83%)
+rsi
+end balance: [33m474.69636486[39m (-5.07%)
+wavetrend
+end balance: [33m513.29874149[39m (2.65%)
+sar
+end balance: [33m434.73091032[39m (-13.06%)
+srsi_macd
+end balance: [33m499.29564078[39m (-0.15%)
+ta_macd_ext
+trend_sar
+srsi_macd
+end balance: [33m499.29564078[39m (-0.15%)
+ta_macd_ext
+trend_ema
+end balance: [33m462.18744198[39m (-7.57%)

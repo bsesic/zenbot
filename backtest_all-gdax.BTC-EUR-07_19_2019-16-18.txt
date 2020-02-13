@@ -1,0 +1,25 @@
+ta_ema
+    "profit": -0.06087677596000003,
+trendline
+trust_distrust
+    "profit": -0.005574131719999969,
+macd
+    "profit": -0.14855117118,
+ta_macd
+cci_srsi
+    "profit": -0.03606427991999999,
+rsi
+    "profit": -0.06491433285999995,
+wavetrend
+    "profit": -0.07958016009999995,
+sar
+    "profit": -0.11964691775999996,
+srsi_macd
+    "profit": -0.03938519045999999,
+ta_macd_ext
+trend_sar
+srsi_macd
+    "profit": -0.03938519045999999,
+ta_macd_ext
+trend_ema
+    "profit": -0.06953694506,

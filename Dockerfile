@@ -2,9 +2,10 @@ FROM node:8 as builder
 ADD . /app
 WORKDIR /app
 RUN npm install -g node-gyp
-RUN npm install --unsafe
+RUN npm install
+RUN npm install jsonexport
 
-FROM node:8-alpine
+FROM node:12.6.0-alpine
 
 ADD . /app
 WORKDIR /app
