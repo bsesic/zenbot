@@ -2,6 +2,7 @@ var z = require('zero-fill')
   , n = require('numbro')
   , Phenotypes = require('../../../lib/phenotype')
 
+<<<<<<< HEAD
 /*
  Licence: Creative Common (Zero CC0)
  Contact: king_fredo on reddit
@@ -11,6 +12,8 @@ var z = require('zero-fill')
  BTC: 1BXC1NQC3act5WyU94wr4vBVS7YS6BgMP8
 */
 
+=======
+>>>>>>> 854903b9e5c7e6c56d57d3029f74aa2c4246505e
 module.exports = {
   name: 'minmax',
   description: 'Trade if candle close is min or max of history periods.',
@@ -65,6 +68,7 @@ module.exports = {
   },
 
   onReport: function (s) {
+<<<<<<< HEAD
     var cols = []
 
     //MIN MAX Indicator
@@ -74,6 +78,19 @@ module.exports = {
       cols.push(z(11, n(s.period.min).format('0.00000000'), ' ')[color])
       cols.push('  Max: ')
       cols.push(z(11, n(s.period.max).format('0.00000000'), ' ')[color])
+=======
+    // Function for the results
+    //TODO: rework histogram
+    var cols = []
+    var color = 'grey'
+    //MIN MAX Indicator
+    if (typeof (s.period.min && s.period.max && s.period.close) !== 'undefined') {
+
+      cols.push('  Min: ')
+      cols.push(z(8, n(s.period.min).format('0.00'), ' ')[color])
+      cols.push('  Max: ')
+      cols.push(z(8, n(s.period.max).format('0.00'), ' ')[color])
+>>>>>>> 854903b9e5c7e6c56d57d3029f74aa2c4246505e
       cols.push(' timeout sell: ')
       cols.push(z(6, n(s.timeout_sell).format('0000'), ' ')[color])
       cols.push(' timeout buy: ')
@@ -82,11 +99,19 @@ module.exports = {
       if (s.period.close == (s.period.min || s.period.max)) {
         color = 'blue'
       }
+<<<<<<< HEAD
       cols.push(z(11, n(s.period.close).format('0.00000000'), ' ')[color])
 
     }
     else {
       cols.push('                                                      ')
+=======
+      cols.push(z(8, n(s.period.close).format('0.00'), ' ')[color])
+
+    }
+    else {
+      cols.push('   ')
+>>>>>>> 854903b9e5c7e6c56d57d3029f74aa2c4246505e
     }
     return cols
   },
@@ -94,7 +119,11 @@ module.exports = {
   phenotypes: {
     // -- common
     period_length: Phenotypes.RangePeriod(1, 120, 'm'),
+<<<<<<< HEAD
     min_periods: Phenotypes.Range(1, 100),
+=======
+    min_periods: Phenotypes.Range(1, 200),
+>>>>>>> 854903b9e5c7e6c56d57d3029f74aa2c4246505e
     markdown_buy_pct: Phenotypes.RangeFloat(-1, 5),
     markup_sell_pct: Phenotypes.RangeFloat(-1, 5),
     order_type: Phenotypes.ListOption(['maker', 'taker']),
